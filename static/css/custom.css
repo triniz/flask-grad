@@ -1,0 +1,267 @@
+/* ==========================================================================
+   IMPORT FONT
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,500,700');
+
+/* ==========================================================================
+   COLOR PALETTE
+   ========================================================================== */
+
+/*
+
+Light Blue : #7a8f9c (Not used);
+Light Blue : #6c91ae;
+Dark Blue : #152B42;
+Gray : #b1b1b1;
+Dark Gray (Text): #313131;
+*/
+
+/* ==========================================================================
+   GLOBAL STYLES
+   ========================================================================== */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  color: #313131;
+}
+
+a {
+  color: #6c91ae;
+}
+
+a:hover {
+  color: #56748b;
+  text-decoration: none;
+}
+
+.btn {
+  padding: 10px 40px;
+  /*border-radius: 50px;*/
+  color: #fff;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.btn:focus {
+  color: #fff;
+  box-shadow: none;
+  outline: none;
+}
+
+.btn-border {
+  color: #777777;
+  background: #fff;
+  box-shadow: 0 5px 5px -2px rgba(31, 31, 31, 0.4);
+}
+.btn-border:hover {
+  color: #fff;
+  background: transparent;
+  border: 1px solid #fff;
+  box-shadow: none;
+}
+.btn-border:focus {
+  color: #2d2d2d !important;
+}
+.btn-lg {
+  font-size: 15px;
+  padding: 14px 40px;
+  text-transform: uppercase;
+}
+.btn-small {
+  padding: 11px 25px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.btn-signup {
+  color: #FFF;
+  background: #6c91ae;
+}
+
+.btn-signup:hover {
+  color: #FFF;
+  background: #56748b;
+  box-shadow: none;
+}
+
+
+/* ==========================================================================
+   LANDING PAGE
+   ========================================================================== */
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Full hight carousel */
+
+.carousel,
+.item,
+.active {
+  height: 100%;
+}
+
+.carousel-inner {
+   height: 100%;
+}
+
+.fill {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+
+/* Remove default background */
+
+.carousel-control.left, .carousel-control.right {
+  background-image: none
+}
+
+/* Fix not displaying in full width */
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+  width: 100%;
+}
+
+/* Other carousel customization */
+
+.carousel-caption {
+  right: 10%;
+  left: 10%;
+  text-shadow: none;
+  bottom: auto;
+  top: 80px;
+}
+
+.carousel-inner .item .carousel-caption h2 {
+  font-weight: 500;
+  color: #fff;
+  margin: 40px;
+  font-size: 42px;
+  line-height: 50px;
+}
+
+@media (max-width: 480px) {
+  .carousel-inner .item .carousel-caption h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-inner .item .carousel-caption h2 {
+    font-size: 24px;
+  }
+}
+
+.carousel-inner .item .carousel-caption .btn {
+  margin: 5px 15px;
+}
+
+.home-logo {
+  margin: 0 auto;
+}
+
+/* CUSTOMIZE THE MODAL
+-------------------------------------------------- */
+
+.modal {
+  text-align: center;
+}
+
+.modal-home-content {
+  text-align: center;
+  background-color: #F4F5F9;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.modal-home-header h4 {
+  font-size: 30px;
+  line-height: 1.3em;
+}
+
+.modal-home-body{
+  padding: 5px 40px;
+}
+
+.form-control:focus {
+  border: solid 1px #EF4035;
+}
+
+.btn-modal {
+  padding: 5px 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 10px;
+  background-color: #EF4035;
+}
+
+.btn-modal:hover,
+.btn-modal:focus {
+  background-color: #d7392f;
+  color: #FFF;
+}
+
+.modal-home-footer {
+  text-align: center;
+}
+
+.modal-home-description {
+  padding: 5px;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+.modal-home-legalAgreement {
+  font-size: 14px;
+}
+
+.modal-backdrop {
+  opacity:0.7 !important;
+}
+
+/* Modal vertical center */
+
+@media screen and (min-width: 768px) {
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+.modal-dialog {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* ==========================================================================
+   FOR TEST PUSRPOSE
+   ========================================================================== */
+
+.y {
+  background-color: yellow;
+}
+
+.r {
+  background-color: red;
+}
